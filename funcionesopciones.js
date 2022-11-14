@@ -1,10 +1,9 @@
 function seleccionhecha() {
-    Categoria.value === 'Estudiante' && cuadroclick(cuadro1)
-    Categoria.value === 'Trainee' && cuadroclick(cuadro2)
-    Categoria.value === 'Junior' && cuadroclick(cuadro3)
 
-
+    select.value === 'Estudiante' && cuadroclick(cuadro1)
+    select.value === 'Trainee' && cuadroclick(cuadro2)
+    select.value === 'Junior' && cuadroclick(cuadro3)
 
 }
 
-
+select.addEventListener('change', seleccionhecha)
