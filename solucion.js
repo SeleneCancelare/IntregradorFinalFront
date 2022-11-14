@@ -56,7 +56,7 @@ function calcularTotal() {
 
   function exito(){
     window.alert('Sus datos han sindo enviados con exito')
-    location.href = 'Exito.html'
+    location.href = 'exito.html'
     calcularTotal && sessionStorage.setItem('calculartotal', JSON.stringify(informacion))
   }
 
