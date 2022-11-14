@@ -31,14 +31,16 @@ function calcularTotal() {
           'Total a Pagar: $' + total;
       } else if (categoria == 'Junior') {
         total = entradaJr * cantEntradas;
+        document.getElementById('importeTotal').innerHTML =
+        'Total a Pagar: $' + total;
       }
     } else {
       window.alert('Debe ingresar una cantidad de entradas valida Ej: 1, 2, 3');
     }
 
 
-    //const nombre = document.getElementById('Nombre').value
-
+    const nombre = document.getElementById('Nombre').value
+        
     var informacion = false
 
     informacion = {
@@ -52,7 +54,7 @@ function calcularTotal() {
     if ( informacion['Nombre', 'Apellido', 'Email']=== '' ){
       window.alert('Complete los campos obligatorios (*)')
 
-    }else exito()
+   }else exito()
 
   function exito(){
     window.alert('Sus datos han sindo enviados con exito')
